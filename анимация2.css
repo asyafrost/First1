@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    text-align: center;
+    background: url(https://html5book.ru/wp-content/uploads/2015/05/background1.png);
+  }
+  .container {
+    width: 660px;
+    margin: 50px auto;
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 40px;
+  }
+  li {
+    display: inline-block;
+    width: 60px;
+    left: 0px;
+    height: 60px;
+    border-radius: 50%;
+    color: #e90cfd;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  li:nth-child(1) {background:#e90cfd}
+
+  .alternate-reverse li {
+    -webkit-animation: shake 2s linear alternate-reverse infinite;
+    animation: shake 2s linear alternate-reverse infinite;
+    
+  }
+
+  .alternate-reverse li:hover{
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+
+  .reverse li {
+    -webkit-animation: shake 4s linear reverse infinite;
+    animation: shake 4s linear reverse infinite;
+  }
+
+  @-webkit-keyframes shake {
+    100% {
+      -webkit-transform: translateX(-80px);    
+    }
+  }
+
+  @keyframes shake {
+    0% {
+        
+      transform: translateX(300px);   
+    }
+    100% {
+      transform: translateX(-300px);    
+    }
+  }
+
+  .scale {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transition-duration: 2s; 
+  }
+  .scale:hover
+  {
+    -webkit-transform: scale(2);
+    -ms-ransform: scale(2);
+    transform: scaleX(2) scaleY(2);
+  }
+
+  .block-animation {
+    width: 130px;
+    height: 130px;
+    text-align: match-parent ;
+    box-shadow: 5px 5px rgb(17, 119, 68);
+    border-radius: 10px;
+    left: 30%;
+    bottom: 30%;
+    position: absolute;
+    background-color: #28f7a8;
+    transition: width 1s cubic-bezier(0, 0, 0.58, 1) 500ms;
+    
+  }
+  
+  .block-animation:hover {
+    transition-delay: 0.3s;
+    transition-duration: 1s;
+    background-color: #56e256;
+    width: 230px;
+    border-radius: 10px/10px;
+  }
+  
+  
